@@ -1,0 +1,40 @@
+@white: #dce2e7;
+@teal: #94cadc;
+@green: #75c797;
+@blue: #68a7e8;
+@red: #eb8b7c;
+@orange: #FFBA83;
+@yellow: #e4cd79;
+@purple: #964AB6;
+@light-gray: #b9c8d5;
+@dark-gray: #8895a1;
+@dark: #2b3f50;
+
+
+// Config -----------------------------------
+@syntax-hue:          208;
+@syntax-saturation:   13%;
+@syntax-brightness:   18%;
+
+// Monochrome -----------------------------------
+@mono-1: @white; // default text
+@mono-2: @teal; // css func()
+@mono-3: @dark-gray; // comments
+
+// Colors -----------------------------------
+@hue-1:   @teal; // <-control chars
+@hue-2:   @blue; // <-function
+@hue-3:   @teal; // <-control words etc.
+@hue-4:   @red; // <-string
+@hue-5:   @green; // variable
+@hue-5-2: @orange; // <- <?php #{}
+@hue-6:   @orange; // <- true/number
+@hue-6-2: @yellow; // <-class
+
+
+// Base colors -----------------------------------
+@syntax-fg:     @white;
+@syntax-bg:     @dark;
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66% );

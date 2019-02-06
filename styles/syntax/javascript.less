@@ -14,8 +14,12 @@
       color: @hue-3;
     }
   }
-  .syntax--arrow {
+  .syntax--arrow,
+  .syntax--jsx .syntax--punctuation.syntax--section.syntax--embedded {
     color: @mono-1;
+  }
+  .syntax--string .syntax--quasi.syntax--punctuation:not(.syntax--definition) {
+    color: @hue-5-2;
   }
   .syntax--module .syntax--accessor {
     color: @hue-1;
